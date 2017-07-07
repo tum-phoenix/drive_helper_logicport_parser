@@ -1,6 +1,7 @@
 # Parser for Logic Port CSV Export
 Parses the csv export file from [logic port](http://www.pctestinstruments.com/index.htm) measurement of [UAVCAN](http://uavcan.org/) data and extracts [meta data](http://uavcan.org/Specification/4._CAN_bus_transport_layer/) .
 
+## Input
 Input csv file should look like this (important is the `CAN` coloumn):
 ```
 "SampleNumber","CAN","CAN Raw Data","CAN Bit Sequence","CANH"
@@ -18,6 +19,7 @@ Input csv file should look like this (important is the `CAN` coloumn):
 ...
 ```
 
+## Output
 Output will look like:
 ```
 new message found:
@@ -34,3 +36,6 @@ new message found:
   transfer ID = 0
   checksum = 23302
   ```
+## Interpreter Settings
+There should at least be one interpreter with the Name `CAN` and displayed as `Interpreted Data`:
+![Image of Interpreter Settings](https://raw.githubusercontent.com/tum-phoenix/drive_helper_uavcan_from_logic_port/master/can_interpeter.png)
