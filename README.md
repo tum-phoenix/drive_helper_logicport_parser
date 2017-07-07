@@ -1,5 +1,8 @@
 # Parser for Logic Port CSV Export
-Parses the csv export file from [logic port](http://www.pctestinstruments.com/index.htm) measurement of [UAVCAN](http://uavcan.org/) data and extracts [meta data](http://uavcan.org/Specification/4._CAN_bus_transport_layer/) .
+Parses the csv export file from [logic port](http://www.pctestinstruments.com/index.htm) measurement of [UAVCAN](http://uavcan.org/) data and extracts [meta data](http://uavcan.org/Specification/4._CAN_bus_transport_layer/).
+
+## Usage
+`python logic_port_uavcan_meta_data.py input.csv`
 
 ## Input
 Input csv file should look like this (important is the `CAN` coloumn):
